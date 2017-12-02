@@ -29,9 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:pdb-io
-LIBS:science_pdb_io_brd-cache
-LIBS:science_pdb_io_brd-rescue
 LIBS:scienceparts
 LIBS:Main Board-cache
 EELAYER 25 0
@@ -147,36 +144,25 @@ F 3 "" H 700 4000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SN74HC14N U?
-U 1 1 597CCCF2
-P 1500 7100
-F 0 "U?" H 1500 7500 60  0000 C CNN
-F 1 "SN74HC14N" H 1500 6700 60  0000 C CNN
-F 2 "" H 1650 7050 60  0001 C CNN
-F 3 "" H 1650 7050 60  0001 C CNN
-	1    1500 7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L GNDD #PWR?
 U 1 1 597CD788
-P 1000 7550
-F 0 "#PWR?" H 1000 7300 50  0001 C CNN
-F 1 "GNDD" H 1000 7400 50  0000 C CNN
-F 2 "" H 1000 7550 50  0000 C CNN
-F 3 "" H 1000 7550 50  0000 C CNN
-	1    1000 7550
+P 1050 7650
+F 0 "#PWR?" H 1050 7400 50  0001 C CNN
+F 1 "GNDD" H 1050 7500 50  0000 C CNN
+F 2 "" H 1050 7650 50  0000 C CNN
+F 3 "" H 1050 7650 50  0000 C CNN
+	1    1050 7650
 	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR?
 U 1 1 597CD9A5
-P 1950 6700
-F 0 "#PWR?" H 1950 6550 50  0001 C CNN
-F 1 "+3.3V" H 1950 6840 50  0000 C CNN
-F 2 "" H 1950 6700 50  0000 C CNN
-F 3 "" H 1950 6700 50  0000 C CNN
-	1    1950 6700
+P 1050 6750
+F 0 "#PWR?" H 1050 6600 50  0001 C CNN
+F 1 "+3.3V" H 1050 6890 50  0000 C CNN
+F 2 "" H 1050 6750 50  0000 C CNN
+F 3 "" H 1050 6750 50  0000 C CNN
+	1    1050 6750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -251,11 +237,11 @@ Text Label 2100 6800 0    60   ~ 0
 Lim2_Raw
 Text Label 2100 6300 0    60   ~ 0
 Lim3_Raw
-Text Label 650  6800 0    60   ~ 0
+Text Label 650  6950 0    40   ~ 0
 Lim1_Raw
-Text Label 650  7000 0    60   ~ 0
+Text Label 650  7150 0    40   ~ 0
 Lim2_Raw
-Text Label 650  7200 0    60   ~ 0
+Text Label 650  7350 0    40   ~ 0
 Lim3_Raw
 $Comp
 L C_Small C?
@@ -389,11 +375,11 @@ F 3 "" H 2350 7100 50  0000 C CNN
 	1    2350 7100
 	1    0    0    -1  
 $EndComp
-Text Label 650  6900 0    60   ~ 0
+Text Label 650  7050 0    40   ~ 0
 Lim1_Out
-Text Label 650  7100 0    60   ~ 0
+Text Label 650  7250 0    40   ~ 0
 Lim2_Out
-Text Label 650  7300 0    60   ~ 0
+Text Label 650  7450 0    40   ~ 0
 Lim3_Out
 $Comp
 L CONN_01X05 P?
@@ -420,30 +406,16 @@ $EndComp
 Wire Wire Line
 	10700 800  10800 800 
 Wire Wire Line
-	10800 700  10800 800 
-Wire Wire Line
-	10800 800  10800 900 
+	10800 700  10800 900 
 Wire Wire Line
 	10800 900  10700 900 
 Connection ~ 10800 800 
 Wire Wire Line
 	10700 1000 10800 1000
 Wire Wire Line
-	10800 1000 10800 1400
+	10800 1000 10800 2850
 Wire Wire Line
-	10800 1400 10800 1700
-Wire Wire Line
-	10800 1700 10800 2400
-Wire Wire Line
-	10800 2400 10800 2600
-Wire Wire Line
-	10800 2600 10800 2850
-Wire Wire Line
-	10100 1200 10100 2000
-Wire Wire Line
-	10100 2000 10100 2700
-Wire Wire Line
-	10100 2700 10100 2850
+	10100 1200 10100 2850
 Wire Wire Line
 	10100 1200 10200 1200
 Wire Wire Line
@@ -465,23 +437,11 @@ Wire Wire Line
 	10200 2000 10100 2000
 Connection ~ 10100 2000
 Wire Wire Line
-	1100 7400 1000 7400
-Wire Wire Line
-	1000 7400 1000 7550
-Wire Wire Line
-	1850 6800 1950 6800
-Wire Wire Line
-	1950 6800 1950 6700
-Wire Wire Line
 	3400 6200 3300 6200
 Wire Wire Line
 	3400 6400 3350 6400
 Wire Wire Line
-	3350 6400 3350 6900
-Wire Wire Line
-	3350 6900 3350 7450
-Wire Wire Line
-	3350 7450 3350 7550
+	3350 6400 3350 7550
 Wire Wire Line
 	3300 7250 3400 7250
 Wire Wire Line
@@ -494,19 +454,9 @@ Wire Wire Line
 	3400 7450 3350 7450
 Connection ~ 3350 7450
 Wire Wire Line
-	2100 6300 2800 6300
+	2100 6300 3400 6300
 Wire Wire Line
-	2800 6300 3400 6300
-Wire Wire Line
-	1100 6800 650  6800
-Wire Wire Line
-	1100 7000 650  7000
-Wire Wire Line
-	1100 7200 650  7200
-Wire Wire Line
-	2800 6150 2800 6300
-Wire Wire Line
-	2800 6300 2800 6400
+	2800 6150 2800 6400
 Connection ~ 2800 6300
 Wire Wire Line
 	3100 6400 3100 6500
@@ -515,11 +465,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 6400 2850 6400
 Wire Wire Line
-	3300 6100 3300 6200
-Wire Wire Line
-	3300 6200 3300 6700
-Wire Wire Line
-	3300 6700 3300 7250
+	3300 6100 3300 7250
 Connection ~ 3300 6200
 Wire Wire Line
 	2800 6150 2750 6150
@@ -528,13 +474,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 6150 2350 6050
 Wire Wire Line
-	2100 6800 2800 6800
+	2100 6800 3400 6800
 Wire Wire Line
-	2800 6800 3400 6800
-Wire Wire Line
-	2800 6650 2800 6800
-Wire Wire Line
-	2800 6800 2800 6900
+	2800 6650 2800 6900
 Connection ~ 2800 6800
 Wire Wire Line
 	3100 6900 3100 7000
@@ -549,13 +491,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 6650 2350 6550
 Wire Wire Line
-	2100 7350 2800 7350
+	2100 7350 3400 7350
 Wire Wire Line
-	2800 7350 3400 7350
-Wire Wire Line
-	2800 7200 2800 7350
-Wire Wire Line
-	2800 7350 2800 7450
+	2800 7200 2800 7450
 Connection ~ 2800 7350
 Wire Wire Line
 	3100 7450 3100 7550
@@ -570,17 +508,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 7200 2350 7100
 Wire Wire Line
-	1100 6900 650  6900
-Wire Wire Line
-	1100 7100 650  7100
-Wire Wire Line
-	1100 7300 650  7300
-Wire Wire Line
 	900  3800 1000 3800
 Wire Wire Line
-	1000 3700 1000 3800
-Wire Wire Line
-	1000 3800 1000 4400
+	1000 3700 1000 4400
 Wire Wire Line
 	950  4200 900  4200
 Wire Wire Line
@@ -588,19 +518,13 @@ Wire Wire Line
 Wire Wire Line
 	900  4800 950  4800
 Wire Wire Line
-	950  4200 950  4800
-Wire Wire Line
-	950  4800 950  4900
+	950  4200 950  4900
 Connection ~ 950  4800
 Connection ~ 1000 3800
 Wire Wire Line
 	1250 6150 1350 6150
 Wire Wire Line
-	1250 5150 1250 5250
-Wire Wire Line
-	1250 5250 1250 5700
-Wire Wire Line
-	1250 5700 1250 6150
+	1250 5150 1250 6150
 Wire Wire Line
 	1250 5700 1350 5700
 Wire Wire Line
@@ -633,11 +557,7 @@ Connection ~ 1250 5700
 Wire Wire Line
 	1300 6350 1350 6350
 Wire Wire Line
-	1300 5450 1300 5900
-Wire Wire Line
-	1300 5900 1300 6350
-Wire Wire Line
-	1300 6350 1300 6450
+	1300 5450 1300 6450
 Wire Wire Line
 	1300 5450 1350 5450
 Connection ~ 1300 6350
@@ -684,7 +604,7 @@ $EndComp
 Wire Wire Line
 	1150 700  1150 950 
 $Comp
-L LED D?
+L LED-RESCUE-Main_Board D?
 U 1 1 59E1996D
 P 1150 1100
 F 0 "D?" H 1150 1200 50  0000 C CNN
@@ -764,7 +684,7 @@ $EndComp
 Wire Wire Line
 	600  1100 600  1150
 $Comp
-L LED D?
+L LED-RESCUE-Main_Board D?
 U 1 1 5A23588B
 P 600 1300
 F 0 "D?" H 600 1400 50  0000 C CNN
@@ -814,7 +734,7 @@ $EndComp
 Wire Wire Line
 	1500 700  1500 950 
 $Comp
-L LED D?
+L LED-RESCUE-Main_Board D?
 U 1 1 5A23A79D
 P 1500 1100
 F 0 "D?" H 1500 1200 50  0000 C CNN
@@ -897,11 +817,7 @@ $EndComp
 Wire Wire Line
 	2200 3850 2650 3850
 Wire Wire Line
-	2650 3650 2650 3850
-Wire Wire Line
-	2650 3850 2650 4500
-Wire Wire Line
-	2650 4500 2650 5100
+	2650 3650 2650 5100
 Wire Wire Line
 	2650 4500 2200 4500
 Connection ~ 2650 3850
@@ -911,11 +827,7 @@ Connection ~ 2650 4500
 Wire Wire Line
 	2200 3950 2450 3950
 Wire Wire Line
-	2450 3650 2450 3950
-Wire Wire Line
-	2450 3950 2450 4600
-Wire Wire Line
-	2450 4600 2450 5200
+	2450 3650 2450 5200
 Wire Wire Line
 	2450 4600 2200 4600
 Connection ~ 2450 3950
@@ -953,11 +865,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 4150 2300 4150
 Wire Wire Line
-	2300 4150 2300 4800
-Wire Wire Line
-	2300 4800 2300 5400
-Wire Wire Line
-	2300 5400 2300 5600
+	2300 4150 2300 5600
 Wire Wire Line
 	2200 5400 2300 5400
 Connection ~ 2300 5400
@@ -981,4 +889,35 @@ F 3 "" H 2300 5600 50  0001 C CNN
 	1    2300 5600
 	1    0    0    -1  
 $EndComp
+$Comp
+L SN74HC14N U?
+U 1 1 5A23B002
+P 1500 7200
+F 0 "U?" H 1650 6700 60  0000 C CNN
+F 1 "SN74HC14N" H 1500 7700 60  0000 C CNN
+F 2 "" H 1500 7300 60  0001 C CNN
+F 3 "" H 1500 7300 60  0001 C CNN
+	1    1500 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 7650 1050 7550
+Wire Wire Line
+	1050 7550 1100 7550
+Wire Wire Line
+	1100 6950 650  6950
+Wire Wire Line
+	650  7050 1100 7050
+Wire Wire Line
+	1100 7150 650  7150
+Wire Wire Line
+	650  7250 1100 7250
+Wire Wire Line
+	1100 7350 650  7350
+Wire Wire Line
+	650  7450 1100 7450
+Wire Wire Line
+	1100 6850 1050 6850
+Wire Wire Line
+	1050 6850 1050 6750
 $EndSCHEMATC

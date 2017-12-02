@@ -1,4 +1,4 @@
-update=2017-12-02 13:06:14
+update=2017-12-02 14:36:02
 version=1
 last_client=kicad
 [general]
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=
+LibDir=../Libraries
 [eeschema/libraries]
 LibName1=Main Board-rescue
 LibName2=power
@@ -61,7 +61,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=pdb-io
-LibName32=science_pdb_io_brd-cache
-LibName33=science_pdb_io_brd-rescue
-LibName34=scienceparts
+LibName31=scienceparts

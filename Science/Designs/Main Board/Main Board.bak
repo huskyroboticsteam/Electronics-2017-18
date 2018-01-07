@@ -779,6 +779,49 @@ Text Label 1150 2500 2    40   ~ 0
 PI_SDA
 Text Label 1150 2600 2    40   ~ 0
 PI_SCL
+NoConn ~ 10700 4500
+NoConn ~ 10700 5550
+Text Label 9700 1900 0    40   ~ 0
+PI_SCK
+Text Label 9700 1800 0    40   ~ 0
+PI_MISO
+Text Label 9700 1700 0    40   ~ 0
+PI_MOSI
+Text Label 9350 4900 0    40   ~ 0
+PI_MISO
+Text Label 9350 5000 0    40   ~ 0
+PI_MOSI
+Text Label 9350 5950 0    40   ~ 0
+PI_MISO
+Text Label 9350 4800 0    40   ~ 0
+PI_SCK
+Text Label 11150 1500 2    40   ~ 0
+PI_SS_0
+Text Label 11150 1600 2    40   ~ 0
+PI_SS_1
+Text Label 9350 4700 0    40   ~ 0
+PI_SS_1
+Text Label 9350 5750 0    40   ~ 0
+PI_SS_0
+Text Label 9350 5850 0    40   ~ 0
+PI_SCK
+$Comp
+L Conn_01x03 J?
+U 1 1 5A2C5124
+P 650 3300
+F 0 "J?" H 650 3500 50  0000 C CNN
+F 1 "SPI_TEST" H 650 3100 50  0000 C CNN
+F 2 "" H 650 3300 50  0001 C CNN
+F 3 "" H 650 3300 50  0001 C CNN
+	1    650  3300
+	-1   0    0    1   
+$EndComp
+Text Label 1150 3200 2    40   ~ 0
+PI_MOSI
+Text Label 1150 3300 2    40   ~ 0
+PI_MISO
+Text Label 1150 3400 2    40   ~ 0
+PI_SCK
 Wire Wire Line
 	10700 800  10800 800 
 Wire Wire Line
@@ -1141,82 +1184,69 @@ Wire Wire Line
 Wire Wire Line
 	850  2600 1150 2600
 Wire Wire Line
-	10700 4900 11100 4900
-Wire Wire Line
-	10700 5950 11100 5950
-NoConn ~ 10700 4500
-NoConn ~ 10700 5550
-Wire Wire Line
 	10200 1700 9700 1700
 Wire Wire Line
 	10200 1800 9700 1800
 Wire Wire Line
 	10200 1900 9700 1900
-Text Label 9700 1900 0    40   ~ 0
-PI_SCK
-Text Label 9700 1800 0    40   ~ 0
-PI_MISO
-Text Label 9700 1700 0    40   ~ 0
-PI_MOSI
-Text Label 9350 4900 0    40   ~ 0
-PI_MISO
-Text Label 9350 5000 0    40   ~ 0
-PI_MOSI
-Text Label 9350 5950 0    40   ~ 0
-PI_MISO
 Wire Wire Line
 	9700 4800 9350 4800
 Wire Wire Line
 	9700 5850 9350 5850
-Text Label 9350 4800 0    40   ~ 0
-PI_SCK
 Wire Wire Line
 	10700 1500 11150 1500
 Wire Wire Line
 	10700 1600 11150 1600
-Text Label 11150 1500 2    40   ~ 0
-PI_SS_0
-Text Label 11150 1600 2    40   ~ 0
-PI_SS_1
-Text Label 9350 4700 0    40   ~ 0
-PI_SS_1
-Text Label 9350 5750 0    40   ~ 0
-PI_SS_0
-Text Label 9350 5850 0    40   ~ 0
-PI_SCK
-Wire Wire Line
-	10200 2200 9700 2200
-Wire Wire Line
-	10200 2300 9700 2300
-Text Label 9700 2200 0    40   ~ 0
-OVRFLW_0
-Text Label 9700 2300 0    40   ~ 0
-OVRFLW_1
-Text Label 11100 4900 2    40   ~ 0
-OVRFLW_1
-Text Label 11100 5950 2    40   ~ 0
-OVRFLW_0
-$Comp
-L Conn_01x03 J?
-U 1 1 5A2C5124
-P 650 3300
-F 0 "J?" H 650 3500 50  0000 C CNN
-F 1 "SPI_TEST" H 650 3100 50  0000 C CNN
-F 2 "" H 650 3300 50  0001 C CNN
-F 3 "" H 650 3300 50  0001 C CNN
-	1    650  3300
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	850  3200 1150 3200
 Wire Wire Line
 	850  3300 1150 3300
 Wire Wire Line
 	850  3400 1150 3400
-Text Label 1150 3200 2    40   ~ 0
-PI_MOSI
-Text Label 1150 3300 2    40   ~ 0
-PI_MISO
-Text Label 1150 3400 2    40   ~ 0
-PI_SCK
+Wire Wire Line
+	9150 4500 9700 4500
+Wire Wire Line
+	9150 5550 9700 5550
+Wire Wire Line
+	9700 5450 9550 5450
+Wire Wire Line
+	9550 5450 9550 5300
+Wire Wire Line
+	9150 5300 9150 5550
+Wire Wire Line
+	9150 4500 9150 4250
+Wire Wire Line
+	9550 4250 9550 4400
+Wire Wire Line
+	9550 4400 9700 4400
+$Comp
+L Crystal Y?
+U 1 1 5A2C7E1D
+P 9350 5300
+F 0 "Y?" H 9350 5450 50  0000 C CNN
+F 1 "Crystal" H 9350 5150 50  0000 C CNN
+F 2 "" H 9350 5300 50  0001 C CNN
+F 3 "" H 9350 5300 50  0001 C CNN
+	1    9350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 5300 9500 5300
+Wire Wire Line
+	9150 5300 9200 5300
+$Comp
+L Crystal Y?
+U 1 1 5A2C8147
+P 9350 4250
+F 0 "Y?" H 9350 4400 50  0000 C CNN
+F 1 "Crystal" H 9350 4100 50  0000 C CNN
+F 2 "" H 9350 4250 50  0001 C CNN
+F 3 "" H 9350 4250 50  0001 C CNN
+	1    9350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4250 9500 4250
+Wire Wire Line
+	9150 4250 9200 4250
 $EndSCHEMATC

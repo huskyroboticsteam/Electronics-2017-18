@@ -1085,17 +1085,6 @@ F 3 "" H 3700 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TLV2544ID U?
-U 1 1 5A52817B
-P 2500 3800
-F 0 "U?" H 2500 3300 60  0000 C CNN
-F 1 "TLV2544ID" H 2500 4650 60  0000 C CNN
-F 2 "" H 2500 4650 60  0001 C CNN
-F 3 "" H 2500 4650 60  0001 C CNN
-	1    2500 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR?
 U 1 1 5A5292E6
 P 3150 2950
@@ -1117,13 +1106,12 @@ F 3 "" H 1750 4350 50  0001 C CNN
 	1    1750 4350
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3000 3550
 NoConn ~ 1950 3850
-Text Label 1600 3400 0    40   ~ 0
+Text Label 1650 3400 0    40   ~ 0
 PI_SCK
-Text Label 1600 3550 0    40   ~ 0
+Text Label 1650 3550 0    40   ~ 0
 PI_MOSI
-Text Label 1600 3700 0    40   ~ 0
+Text Label 1650 3700 0    40   ~ 0
 PI_MISO
 $Comp
 L R R?
@@ -1625,7 +1613,7 @@ Connection ~ 3700 1000
 Wire Wire Line
 	3000 3100 3150 3100
 Wire Wire Line
-	3150 2950 3150 3400
+	3150 2950 3150 3550
 Wire Wire Line
 	1950 4150 1750 4150
 Wire Wire Line
@@ -1640,13 +1628,13 @@ Wire Wire Line
 	1950 4000 1750 4000
 Connection ~ 1750 4150
 Wire Wire Line
-	1950 3700 1600 3700
+	1950 3700 1650 3700
 Wire Wire Line
-	1950 3550 1600 3550
+	1950 3550 1650 3550
 Wire Wire Line
-	1950 3400 1600 3400
+	1950 3400 1650 3400
 Wire Wire Line
-	1950 3250 1600 3250
+	1950 3250 1650 3250
 Wire Wire Line
 	4150 1100 4850 1100
 Wire Wire Line
@@ -1703,21 +1691,195 @@ Text Label 9800 2200 0    40   ~ 0
 PI_SS_2
 Text Label 9800 2300 0    40   ~ 0
 PI_SS_3
-Text Label 1600 3250 0    40   ~ 0
+Text Label 1650 3250 0    40   ~ 0
 PI_SS_3
-Wire Wire Line
-	1950 3100 1600 3100
-Wire Wire Line
-	1600 3100 1600 3000
 $Comp
-L +3.3V #PWR?
-U 1 1 5A53104B
-P 1600 3000
-F 0 "#PWR?" H 1600 2850 50  0001 C CNN
-F 1 "+3.3V" H 1600 3140 50  0000 C CNN
-F 2 "" H 1600 3000 50  0001 C CNN
-F 3 "" H 1600 3000 50  0001 C CNN
-	1    1600 3000
+L TLV2544ID U?
+U 1 1 5A5313CE
+P 2500 3800
+F 0 "U?" H 2500 3300 60  0000 C CNN
+F 1 "TLV2544ID" H 2500 4650 60  0000 C CNN
+F 2 "" H 2500 4650 60  0001 C CNN
+F 3 "" H 2500 4650 60  0001 C CNN
+	1    2500 3800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3150 3550 3000 3550
+Connection ~ 3150 3400
+NoConn ~ 1950 3100
+$Comp
+L PCA9685 U?
+U 1 1 5A534637
+P 6000 3350
+F 0 "U?" H 6000 2300 40  0000 C CNN
+F 1 "PCA9685" H 6000 4000 40  0000 C CNN
+F 2 "" H 6000 2300 40  0001 C CNN
+F 3 "" H 6000 2300 40  0001 C CNN
+	1    6000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCA9685 U?
+U 1 1 5A5346EA
+P 6000 1350
+F 0 "U?" H 6000 300 40  0000 C CNN
+F 1 "PCA9685" H 6000 2000 40  0000 C CNN
+F 2 "" H 6000 300 40  0001 C CNN
+F 3 "" H 6000 300 40  0001 C CNN
+	1    6000 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2000 5400 2000
+Wire Wire Line
+	5400 1100 5400 2350
+Wire Wire Line
+	5500 2200 5400 2200
+Connection ~ 5400 2200
+Wire Wire Line
+	5500 2100 5400 2100
+Connection ~ 5400 2100
+$Comp
+L GNDD #PWR?
+U 1 1 5A534CEC
+P 5400 2350
+F 0 "#PWR?" H 5400 2100 50  0001 C CNN
+F 1 "GNDD" H 5400 2225 50  0000 C CNN
+F 2 "" H 5400 2350 50  0001 C CNN
+F 3 "" H 5400 2350 50  0001 C CNN
+	1    5400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4000 5500 4000
+Wire Wire Line
+	5400 3100 5400 4300
+Wire Wire Line
+	5400 4200 5500 4200
+Connection ~ 5400 4200
+Wire Wire Line
+	5500 4100 5400 4100
+Connection ~ 5400 4100
+Wire Wire Line
+	5500 2950 5300 2950
+Wire Wire Line
+	5300 2800 5300 3600
+Wire Wire Line
+	5500 950  5300 950 
+Wire Wire Line
+	5300 800  5300 1400
+$Comp
+L GNDD #PWR?
+U 1 1 5A5354B0
+P 5400 4300
+F 0 "#PWR?" H 5400 4050 50  0001 C CNN
+F 1 "GNDD" H 5400 4175 50  0000 C CNN
+F 2 "" H 5400 4300 50  0001 C CNN
+F 3 "" H 5400 4300 50  0001 C CNN
+	1    5400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5A53555D
+P 5300 800
+F 0 "#PWR?" H 5300 650 50  0001 C CNN
+F 1 "+3.3V" H 5300 940 50  0000 C CNN
+F 2 "" H 5300 800 50  0001 C CNN
+F 3 "" H 5300 800 50  0001 C CNN
+	1    5300 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5A53563D
+P 5300 2800
+F 0 "#PWR?" H 5300 2650 50  0001 C CNN
+F 1 "+3.3V" H 5300 2940 50  0000 C CNN
+F 2 "" H 5300 2800 50  0001 C CNN
+F 3 "" H 5300 2800 50  0001 C CNN
+	1    5300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 800  6950 800 
+Wire Wire Line
+	6550 900  6950 900 
+Wire Wire Line
+	6550 1000 6950 1000
+Text Label 6950 800  2    40   ~ 0
+MOTOR1_OUT
+Text Label 6950 900  2    40   ~ 0
+MOTOR2_OUT
+Text Label 6950 1000 2    40   ~ 0
+MOTOR3_OUT
+Wire Wire Line
+	5500 1750 5100 1750
+Wire Wire Line
+	5500 1850 5100 1850
+Text Label 5100 1750 0    40   ~ 0
+PI_SCL
+Text Label 5100 1850 0    40   ~ 0
+PI_SDA
+Wire Wire Line
+	5500 3750 5100 3750
+Wire Wire Line
+	5500 3850 5100 3850
+Text Label 5100 3750 0    40   ~ 0
+PI_SCL
+Text Label 5100 3850 0    40   ~ 0
+PI_SDA
+Wire Wire Line
+	6550 2800 7050 2800
+Text Label 7050 2800 2    40   ~ 0
+SERVO1_PWM
+Wire Wire Line
+	6550 2900 7050 2900
+Text Label 7050 2900 2    40   ~ 0
+SERVO2_PWM
+Wire Wire Line
+	6550 3000 7050 3000
+Text Label 7050 3000 2    40   ~ 0
+SERVO3_PWM
+Wire Wire Line
+	5300 3600 5500 3600
+Connection ~ 5300 2950
+Wire Wire Line
+	5500 3500 5300 3500
+Connection ~ 5300 3500
+Wire Wire Line
+	5500 3300 5300 3300
+Connection ~ 5300 3300
+Wire Wire Line
+	5500 3100 5400 3100
+Connection ~ 5400 4000
+Wire Wire Line
+	5500 3200 5400 3200
+Connection ~ 5400 3200
+Wire Wire Line
+	5500 3400 5400 3400
+Connection ~ 5400 3400
+Text Notes 5250 3500 1    40   ~ 0
+Sets 0x4B
+Wire Wire Line
+	5300 1400 5500 1400
+Connection ~ 5300 950 
+Wire Wire Line
+	5500 1300 5300 1300
+Connection ~ 5300 1300
+Wire Wire Line
+	5500 1100 5400 1100
+Connection ~ 5400 2000
+Wire Wire Line
+	5500 1200 5400 1200
+Connection ~ 5400 1200
+Wire Wire Line
+	5500 1500 5400 1500
+Connection ~ 5400 1500
+Wire Wire Line
+	5550 1600 5400 1600
+Connection ~ 5400 1600
+Text Notes 5250 1500 1    40   ~ 0
+Sets 0x4C
 $EndSCHEMATC

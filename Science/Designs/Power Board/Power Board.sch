@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Power Board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -78,19 +79,13 @@ F 3 "" H 1500 1100 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1700 2300 2250 2300
-Wire Wire Line
-	2250 2300 2450 2300
-Wire Wire Line
-	2450 2300 2750 2300
+	1700 2300 2750 2300
 Wire Wire Line
 	1700 2500 2250 2500
 Wire Wire Line
 	1700 2400 1800 2400
 Wire Wire Line
-	1800 2400 1800 2600
-Wire Wire Line
-	1800 2600 1800 2700
+	1800 2400 1800 2700
 Wire Wire Line
 	1700 2600 1800 2600
 Connection ~ 1800 2600
@@ -280,7 +275,7 @@ F 3 "" H 4500 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D?
+L LED-RESCUE-Power_Board D?
 U 1 1 5A235063
 P 4500 1550
 F 0 "D?" H 4500 1650 50  0000 C CNN
@@ -319,7 +314,7 @@ F 3 "" H 4850 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D?
+L LED-RESCUE-Power_Board D?
 U 1 1 5A235495
 P 4850 1550
 F 0 "D?" H 4850 1650 50  0000 C CNN
@@ -369,7 +364,7 @@ F 3 "" H 2350 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D?
+L LED-RESCUE-Power_Board D?
 U 1 1 5A235672
 P 2350 4700
 F 0 "D?" H 2350 4800 50  0000 C CNN
@@ -527,18 +522,14 @@ Wire Wire Line
 	2650 2100 2750 2100
 Connection ~ 2450 2300
 Wire Wire Line
-	2250 2950 2450 2950
-Wire Wire Line
-	2450 2950 2750 2950
+	2250 2950 2750 2950
 Wire Wire Line
 	2450 2950 2450 2900
 Wire Wire Line
 	2250 2500 2250 2950
 Connection ~ 2450 2950
 Wire Wire Line
-	2450 2400 2450 2550
-Wire Wire Line
-	2450 2550 2450 2600
+	2450 2400 2450 2600
 Wire Wire Line
 	2450 2550 2550 2550
 Wire Wire Line
@@ -555,26 +546,16 @@ Wire Wire Line
 	2100 1900 2100 2400
 Connection ~ 2100 1900
 Wire Wire Line
-	2050 1900 2100 1900
-Wire Wire Line
-	2100 1900 2250 1900
-Wire Wire Line
-	2250 1900 2450 1900
-Wire Wire Line
-	2450 1900 2550 1900
+	2050 1900 2550 1900
 Wire Wire Line
 	2050 1800 2350 1800
 Wire Wire Line
-	2650 1950 2650 2100
-Wire Wire Line
-	2650 2100 2650 2750
+	2650 1950 2650 2750
 Connection ~ 2650 2100
 Wire Wire Line
 	2750 2400 2700 2400
 Wire Wire Line
-	2700 2400 2700 3050
-Wire Wire Line
-	2700 3050 2700 3200
+	2700 2400 2700 3200
 Wire Wire Line
 	2700 3050 2750 3050
 $Comp
@@ -598,17 +579,13 @@ I2C_SCL
 Text Label 4050 3050 2    40   ~ 0
 I2C_SCL
 Wire Wire Line
-	3650 3050 3700 3050
-Wire Wire Line
-	3700 3050 4050 3050
+	3650 3050 4050 3050
 Wire Wire Line
 	3650 2950 4050 2950
 Wire Wire Line
 	3650 2400 4050 2400
 Wire Wire Line
-	3650 2300 3700 2300
-Wire Wire Line
-	3700 2300 4050 2300
+	3650 2300 4050 2300
 $Comp
 L +3.3V #PWR?
 U 1 1 5A2429EB
@@ -632,7 +609,7 @@ F 3 "" H 5200 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D?
+L LED-RESCUE-Power_Board D?
 U 1 1 5A2432EE
 P 5200 1550
 F 0 "D?" H 5200 1650 50  0000 C CNN
@@ -734,7 +711,7 @@ L R R?
 U 1 1 5A518488
 P 3000 3850
 F 0 "R?" V 3080 3850 50  0000 C CNN
-F 1 "150mΩ" V 3000 3850 50  0000 C CNN
+F 1 "150mΩ" V 3000 3850 39  0000 C CNN
 F 2 "" V 2930 3850 50  0000 C CNN
 F 3 "" H 3000 3850 50  0000 C CNN
 	1    3000 3850
@@ -762,19 +739,15 @@ Wire Wire Line
 Wire Wire Line
 	3250 3950 3100 3950
 Wire Wire Line
-	3100 3950 3100 3650
+	3100 3650 3100 3950
 Wire Wire Line
 	3000 3700 3000 3700
 Wire Wire Line
-	3100 3650 3000 3650
-Wire Wire Line
-	3000 3650 2750 3650
+	2750 3650 3100 3650
 Wire Wire Line
 	3000 3650 3000 3700
 Wire Wire Line
-	2750 4050 3000 4050
-Wire Wire Line
-	3000 4050 3250 4050
+	2750 4050 3250 4050
 Wire Wire Line
 	3000 4050 3000 4000
 $Comp
@@ -812,9 +785,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 4150 4550 4150
 Wire Wire Line
-	4150 4050 4200 4050
-Wire Wire Line
-	4200 4050 4550 4050
+	4150 4050 4550 4050
 Wire Wire Line
 	4200 3850 4200 3650
 Wire Wire Line

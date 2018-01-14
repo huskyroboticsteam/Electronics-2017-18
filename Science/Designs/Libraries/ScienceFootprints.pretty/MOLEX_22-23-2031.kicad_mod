@@ -15,4 +15,9 @@
   (pad 1 thru_hole circle (at -2.54 0) (size 1.651 1.651) (drill 1.016) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 0 0) (size 1.651 1.651) (drill 1.016) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at 2.54 0) (size 1.651 1.651) (drill 1.016) (layers *.Cu *.Mask))
+  (model "../../../../../../GitHub/Electronics-2017-18/Science/CAD Parts/MOLEX_22-23-2031.wrl"
+    (at (xyz 0 -0.02 0.06))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

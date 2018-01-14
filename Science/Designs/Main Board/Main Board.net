@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "D:\\Development\\Electronics-2017-18\\Science\\Designs\\Main Board\\Main Board.sch")
-    (date "2018-01-13 22:19:33")
+    (source "D:/Development/Electronics-2017-18/Science/Designs/Main Board/Main Board.sch")
+    (date "2018-01-14 00:48:48")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -515,6 +515,7 @@
       (tstamp 5A60281C))
     (comp (ref HS1)
       (value HEATSINK)
+      (footprint ScienceFootprints:AAVID_531202B02500G)
       (libsource (lib "Main Board-cache") (part HEATSINK))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A613B5A))
@@ -935,10 +936,10 @@
   (libraries
     (library (logical "Main Board-rescue")
       (uri "D:\\Development\\Electronics-2017-18\\Science\\Designs\\Main Board\\Main Board-rescue.lib"))
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical scienceparts)
       (uri D:\Development\Electronics-2017-18\Science\Designs\Libraries\scienceparts.lib))
     (library (logical "Main Board-cache")

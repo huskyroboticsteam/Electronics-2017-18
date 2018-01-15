@@ -2350,7 +2350,7 @@ Connection ~ 2650 2350
 Text Label 2950 2250 2    40   ~ 0
 PI_SDA
 Text Label 2950 2150 2    40   ~ 0
-PI_SDA
+PI_SCL
 NoConn ~ 2600 2050
 NoConn ~ 2600 1950
 Wire Wire Line

@@ -739,9 +739,9 @@ PI_MISO
 Text Label 9350 4800 0    40   ~ 0
 PI_SCK
 Text Label 11150 1500 2    40   ~ 0
-PI_SS_0
+PI_SS_3
 Text Label 11150 1600 2    40   ~ 0
-PI_SS_1
+PI_SS_2
 Text Label 9350 4700 0    40   ~ 0
 PI_SS_1
 Text Label 9350 5750 0    40   ~ 0
@@ -1477,9 +1477,9 @@ Wire Wire Line
 Wire Wire Line
 	10200 2300 9700 2300
 Text Label 9700 2200 0    40   ~ 0
-PI_SS_2
+PI_SS_1
 Text Label 9700 2300 0    40   ~ 0
-PI_SS_3
+PI_SS_0
 Text Label 650  3350 0    40   ~ 0
 PI_SS_3
 $Comp

@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "I:\\GitHub\\Electronics-2017-18\\Science\\Designs\\Power Board\\Power Board.sch")
-    (date "1/14/2018 12:43:17 AM")
+    (source "C:/Users/Jaden/Documents/GitHub/Electronics-2017-18/Science/Designs/Power Board/Power Board.sch")
+    (date "1/20/2018 10:32:34 AM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -250,14 +250,14 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical scienceparts)
-      (uri I:\GitHub\Electronics-2017-18\Science\Designs\Libraries\scienceparts.lib))
-    (library (logical "Power Board-cache")
-      (uri "I:\\GitHub\\Electronics-2017-18\\Science\\Designs\\Power Board\\Power Board-cache.lib"))
     (library (logical device)
-      (uri "I:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical "Power Board-rescue")
-      (uri "Power Board-rescue.lib")))
+      (uri "C:\\Users\\Jaden\\Documents\\GitHub\\Electronics-2017-18\\Science\\Designs\\Power Board\\Power Board-rescue.lib"))
+    (library (logical scienceparts)
+      (uri C:\Users\Jaden\Documents\GitHub\Electronics-2017-18\Science\Designs\Libraries\scienceparts.lib))
+    (library (logical "Power Board-cache")
+      (uri "C:\\Users\\Jaden\\Documents\\GitHub\\Electronics-2017-18\\Science\\Designs\\Power Board\\Power Board-cache.lib")))
   (nets
     (net (code 1) (name +3V3)
       (node (ref R2) (pin 1))

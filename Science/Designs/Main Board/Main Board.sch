@@ -1025,16 +1025,8 @@ Wire Wire Line
 Wire Wire Line
 	10100 1200 10100 2850
 Wire Wire Line
-	10100 1200 10200 1200
-Wire Wire Line
 	10700 1400 10800 1400
 Connection ~ 10800 1400
-Wire Wire Line
-	10700 1700 10800 1700
-Connection ~ 10800 1700
-Wire Wire Line
-	10700 2400 10800 2400
-Connection ~ 10800 2400
 Wire Wire Line
 	10200 2700 10100 2700
 Connection ~ 10100 2700
@@ -2600,9 +2592,6 @@ Wire Wire Line
 	10950 4450 10950 4500
 Wire Wire Line
 	10950 4500 10700 4500
-Wire Wire Line
-	10700 2200 10800 2200
-Connection ~ 10800 2200
 $Comp
 L R R43
 U 1 1 5A5F2910
@@ -3361,4 +3350,16 @@ F 3 "" H 3750 5500 50  0001 C CNN
 	1    3750 5500
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	10700 2400 10750 2400
+Wire Wire Line
+	10700 2200 10750 2200
+Wire Wire Line
+	10700 1700 10750 1700
+Wire Wire Line
+	10200 1200 10150 1200
+NoConn ~ 10150 1200
+NoConn ~ 10750 1700
+NoConn ~ 10750 2200
+NoConn ~ 10750 2400
 $EndSCHEMATC

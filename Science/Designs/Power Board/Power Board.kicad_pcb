@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 90.323662 48.692999 193.140338 138.251001)
     (thickness 1.6)
-    (drawings 32)
+    (drawings 33)
     (tracks 366)
     (zones 0)
     (modules 31)
@@ -1983,6 +1983,9 @@
       (xy -0.001365 -1.579979) (xy 0.001526 -1.581191) (xy 0.0031 -1.581299) (xy 0.006101 -1.580808)) (layer F.SilkS) (width 0.01))
   )
 
+  (gr_text I2C (at 152.654 61.976) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text "Power Input" (at 98.044 66.04 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )

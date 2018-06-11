@@ -1636,7 +1636,7 @@ Wire Wire Line
 	5250 3050 5150 3050
 Connection ~ 5150 3050
 Text Notes 5000 3150 1    40   ~ 0
-Sets 0x4B
+Sets 0x74
 Wire Wire Line
 	5050 1300 5250 1300
 Connection ~ 5050 850 

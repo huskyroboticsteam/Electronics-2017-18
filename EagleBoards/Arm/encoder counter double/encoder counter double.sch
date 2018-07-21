@@ -256,11 +256,11 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
 <pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
 <text x="-3.81" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
+<text x="3.81" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
 <text x="-3.81" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
@@ -270,6 +270,9 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <wire x1="5.207" y1="16.51" x2="-5.207" y2="16.51" width="0.127" layer="21"/>
 <wire x1="-5.207" y1="16.51" x2="-5.207" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-5.207" y1="-1.27" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<text x="2.54" y="3.81" size="1.27" layer="21" rot="R90">IN</text>
+<text x="-2.54" y="3.81" size="1.27" layer="21" rot="R90">OUT</text>
+<text x="0" y="3.81" size="1.27" layer="21" rot="R90">GND</text>
 </package>
 <package name="22-23-2021_199MILHEADER">
 <description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232021_sd.pdf&gt;Datasheet &lt;/a&gt;</description>

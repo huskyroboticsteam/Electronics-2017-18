@@ -1,0 +1,46 @@
+{
+    "author": {
+        "email": "hoffman5@uw.edu",
+        "name": "Alex Hoffman"
+    },
+    "description": {
+        "EN": "CAM job description goes here."
+    },
+    "output_type": "directory",
+    "outputs": [
+        {
+            "format_specifier": {
+                "decimal": 3,
+                "integer": 3
+            },
+            "output_type": "drill",
+            "outputs": [
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "drills": {
+                        "NPTH": true,
+                        "PTH": true,
+                        "VIA": true
+                    },
+                    "filename_format": "%N.drd",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "Generate drill data",
+                    "type": "excellon"
+                }
+            ]
+        }
+    ],
+    "timestamp": "2018-07-05T23:43:20",
+    "type": "EAGLE CAM job",
+    "units": "imperial",
+    "version": "8.6.1"
+}

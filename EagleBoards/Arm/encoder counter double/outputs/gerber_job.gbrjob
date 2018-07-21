@@ -1,0 +1,13 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,9.1.0*%
+%TF.CreationDate,2018-07-07T04:41:33Z*%
+%TF.Part,Single*%
+%MOIN*%
+%TJ.B_Owner,Alex Hoffman <hoffman5@uw.edu>*%
+%TJ.B_ID,encoder counter double*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Thickness,0.061811*%
+%TJ.B_Size_X,2.949213*%
+%TJ.B_Size_Y,0.987008*%
+M02*
